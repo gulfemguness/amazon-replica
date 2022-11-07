@@ -3,12 +3,13 @@
     font-family: Arial, Helvetica, sans-serif;
     /* border: 0.5px dotted rgb(248, 211, 211); */
 }
-        /* to center the content: specify the width of the box and set left/right margin to auto */
-
-
-#logo{ /* COULDN'T CENTERED the logo */
-    width: 10%;
-    text-align: center;
+        
+img{ 
+    display: block;
+    max-width: 200px; 
+    margin: auto;
+    padding: auto;
+    /* reduce the space between the logo and the form */
 }
 
 /** FORM **/
@@ -19,6 +20,10 @@ h1{
     color: rgb(50, 50, 50);
 }
 
+p{
+    font-size: 10pt;
+}
+
 form{
     background-color: #fff;
     max-width: 500px; 
@@ -26,12 +31,6 @@ form{
     padding: 2rem;
     border: .05rem solid rgb(167, 167, 167);
     border-radius: .25rem;
-
-    /* padding-left: 5%;
-    margin-bottom: 30px; */
-    /* padding: 8px;
-    margin: 10px; */
-
 }
 
 label{
@@ -41,7 +40,7 @@ label{
     color: rgb(50, 50, 50);
 }
 
-#forgot{
+#forgot-pwd{
     margin-left: 58%;    
     /* font-size: 10pt; */
 }
@@ -55,6 +54,9 @@ input{
     font-size: 10pt;
     color: rgb(50, 50, 50);
 }
+
+
+    /* buttons */
 
 #continue-btn, #create-btn{
     color: rgb(50, 50, 50);
@@ -71,16 +73,32 @@ input{
     /* background: linear-gradient(#ffd57cd2, #ffd478, #ffd57cd2); */
 }
 
+#continue-btn:hover{ 
+    background: #ffedc5;
+    /* linear-gradient(darken, #ffedc5 50%, #ffc852 50%) > didn't work, will look later */
+}
+
+#continue-btn:active{
+    background: #ffc852;
+}
+
 #create-btn{
     background: linear-gradient(rgb(255, 255, 255), rgb(209, 209, 209));
     /* background: linear-gradient(rgb(255, 255, 255), rgb(234, 234, 234), rgb(255, 255, 255)); */
+}
 
+#create-btn:hover{
+    background: rgb(248, 248, 248);
+}
+
+#create-btn:active{
+    background: rgb(209, 209, 209);
 }
 
 
-/* Sign-In Bottom Part */
+/* THE BOTTOM OUTER PART OF THE FORM FRAME */
 
-.outside-frame{
+.under-form{
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -98,30 +116,17 @@ h5 {
     color: rgb(167, 167, 167);
  } 
  
- h5 span { 
-     background:#fff; 
-     padding:0 10px; 
- }
+h5 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
 
- /* Links & Button */
 
- /* #bottom-btn{
-
-    #FF9900
-
-    display: inline-block;
-    background-color: rgba(211, 211, 211, 0.677);
-    border-radius: 1mm;
-    padding: 8px;
-    margin-top: 18px;
-    margin-bottom: 50px;
-    color: rgb(50, 50, 50);
- } */
-
- /* Footer */
+ /* FOOTER */
 
 footer{
     border-top: 0.5mm solid lightgray;
+    margin-top: 80px;
     padding: 50px;
     text-align: center;
     font-size: 9pt;
@@ -129,22 +134,29 @@ footer{
 
 footer p{
     color: gray;
-    margin-top: 20px;
- }
+}
+
+
+/* LINKS */
 
 a{
     text-decoration: none;
     color: #146EB4;
 }
 
+a:hover {
+    color: rgb(142, 31, 0);
+}
+
+a:active { /* selected */
+    color: rgb(213, 46, 0);
+}
+
 li{
-    display: inline;
+    display: inline; /*same line nav items*/
     margin-right: 30px;
     list-style: none;
-    /* color: aqua; */
  }
 
-/* li a:hover{
-    color: aqua;
-} */
 
+/* to center the content you can use: specify the width of the box and set left/right margin to auto */ 
