@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 0.5px dotted rgb(248, 211, 211); */
+}
+        /* to center the content: specify the width of the box and set left/right margin to auto */
+
+
+#logo{ /* COULDN'T CENTERED the logo */
+    width: 10%;
+    text-align: center;
+}
+
+/** FORM **/
+
+h1{
+    font-weight: lighter;
+    font-size: 20pt;
+    color: rgb(50, 50, 50);
+}
+
+form{
+    background-color: #fff;
+    max-width: 500px; 
+    margin: 2rem auto;
+    padding: 2rem;
+    border: .05rem solid rgb(167, 167, 167);
+    border-radius: .25rem;
+
+    /* padding-left: 5%;
+    margin-bottom: 30px; */
+    /* padding: 8px;
+    margin: 10px; */
+
+}
+
+label{
+    display: block;
+    font-size: 11pt;
+    padding: 1rem 0 .3rem; /* 0 makes it inline the elements from top to bottom */
+    color: rgb(50, 50, 50);
+}
+
+#forgot{
+    margin-left: 58%;    
+    /* font-size: 10pt; */
+}
+
+input{
+    display: block;
+    width: 100%;
+    border: .09rem solid rgb(167, 167, 167);
+    border-radius: .1rem;
+    padding: .5rem;
+    font-size: 10pt;
+    color: rgb(50, 50, 50);
+}
+
+#continue-btn, #create-btn{
+    color: rgb(50, 50, 50);
+    font-size: 11pt;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    /* border: .09rem solid rgb(167, 167, 167); */
+    /* padding: .5rem; */
+
+}
+
+#continue-btn{
+    background: linear-gradient(#ffedc5, #ffc852);   
+    /* background: linear-gradient(#ffd57cd2, #ffd478, #ffd57cd2); */
+}
+
+#create-btn{
+    background: linear-gradient(rgb(255, 255, 255), rgb(209, 209, 209));
+    /* background: linear-gradient(rgb(255, 255, 255), rgb(234, 234, 234), rgb(255, 255, 255)); */
+
+}
+
+
+/* Sign-In Bottom Part */
+
+.outside-frame{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+h5 {
+    border-bottom: 1px solid lightgray; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: rgb(167, 167, 167);
+ } 
+ 
+ h5 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+ /* Links & Button */
+
+ /* #bottom-btn{
+
+    #FF9900
+
+    display: inline-block;
+    background-color: rgba(211, 211, 211, 0.677);
+    border-radius: 1mm;
+    padding: 8px;
+    margin-top: 18px;
+    margin-bottom: 50px;
+    color: rgb(50, 50, 50);
+ } */
+
+ /* Footer */
+
+footer{
+    border-top: 0.5mm solid lightgray;
+    padding: 50px;
+    text-align: center;
+    font-size: 9pt;
+ }
+
+footer p{
+    color: gray;
+    margin-top: 20px;
+ }
+
+a{
+    text-decoration: none;
+    color: #146EB4;
+}
+
+li{
+    display: inline;
+    margin-right: 30px;
+    list-style: none;
+    /* color: aqua; */
+ }
+
+/* li a:hover{
+    color: aqua;
+} */
+
